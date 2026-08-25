@@ -100,6 +100,14 @@ const CertificationsSection = () => {
       date: "2023–24"
     },
     {
+      emoji: "🎯",
+      title: "GATE (Data Science & AI) 2026 – Qualified",
+      bullets: [
+        "Qualified the GATE DA (Data Science & Artificial Intelligence) 2026 examination."
+      ],
+      date: "2026"
+    },
+    {
       emoji: "💻",
       title: "Major Project – Engineering Mathematics Solver (Ongoing, 2025)",
       bullets: [
