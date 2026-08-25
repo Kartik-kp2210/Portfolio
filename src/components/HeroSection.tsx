@@ -21,7 +21,7 @@ const HeroSection = () => {
 
   const handleResumeClick = () => {
     // Option 1: Open Google Drive link (recommended for mobile compatibility)
-    window.open('https://drive.google.com/file/d/1ng6D3o3T_MW5a84a7QJmQFL7mK_lwQgI/view?usp=drive_link', '_blank');
+    window.open('/Resume.pdf', '_blank');
     
     // Option 2: Download resume file (for desktop)
     // const link = document.createElement('a');

@@ -37,7 +37,7 @@ const ProjectsSection = () => {
   const projects = [
     {
       title: "MathMinds – Engineering Mathematics Solver",
-      timeline: "📅 July 2025 – April 2026 (Ongoing)",
+      timeline: "📅 July 2025 – April 2026",
       description: "A web-based solver for Mumbai University Engineering Mathematics (M1–M4) subjects, providing step-by-step solutions for Laplace transforms, calculus, trigonometry, and linear algebra.",
       longDescription: "Designing a web-based solver for Mumbai University Engineering Mathematics (M1–M4) subjects, providing step-by-step solutions for Laplace transforms, calculus, trigonometry, and linear algebra. Implementing core functionality using Python (SymPy, NumPy, SciPy), with a Flask backend and HTML/CSS/JavaScript interface.",
       icon: Activity,
