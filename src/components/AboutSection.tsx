@@ -62,9 +62,9 @@ const AboutSection = () => {
             <div className="space-y-6">
               <h3 className="text-3xl font-bold mb-4">Passionate Developer & AI Enthusiast</h3>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                I'm a final-year Computer Engineering student specializing in Artificial Intelligence & Machine Learning, 
-                with a strong foundation in Python, Java, and modern frameworks. My journey in software development 
-                is fueled by curiosity, creativity, and the drive to solve real-world problems through code.
+                I'm a Software Engineer graduating with a B.E. in Computer Engineering (Artificial Intelligence & Machine Learning) 
+                from A. P. Shah Institute of Technology, Mumbai University. I have a strong foundation in Java, Object-Oriented Programming, 
+                Data Structures & Algorithms, SQL, and Python.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
                 With experience across full-stack web development, AI/ML applications, and cloud technologies, 

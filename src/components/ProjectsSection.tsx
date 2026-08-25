@@ -27,8 +27,8 @@ const ProjectsSection = () => {
   }, []);
 
   const toggleCard = (index: number) => {
-    setFlippedCards(prev => 
-      prev.includes(index) 
+    setFlippedCards(prev =>
+      prev.includes(index)
         ? prev.filter(i => i !== index)
         : [...prev, index]
     );
@@ -36,10 +36,10 @@ const ProjectsSection = () => {
 
   const projects = [
     {
-      title: "Engineering Mathematics Solver (Major Project – Ongoing)",
-      timeline: "📅 June 2025 – Present",
-      description: "A smart academic assistant for solving and understanding complex engineering mathematics (M1–M4).",
-      longDescription: "Interactive solver that covers Mumbai University M1–M4 topics with step-by-step solutions using symbolic computation. Includes manual, image-based (OCR), and NLP inputs with a chatbot assistant that explains steps and suggests alternate methods. Integrated formula sheets and clean UI help students learn by doing.",
+      title: "MathMinds – Engineering Mathematics Solver",
+      timeline: "📅 July 2025 – April 2026 (Ongoing)",
+      description: "A web-based solver for Mumbai University Engineering Mathematics (M1–M4) subjects, providing step-by-step solutions for Laplace transforms, calculus, trigonometry, and linear algebra.",
+      longDescription: "Designing a web-based solver for Mumbai University Engineering Mathematics (M1–M4) subjects, providing step-by-step solutions for Laplace transforms, calculus, trigonometry, and linear algebra. Implementing core functionality using Python (SymPy, NumPy, SciPy), with a Flask backend and HTML/CSS/JavaScript interface.",
       icon: Activity,
       technologies: [
         "Python",
@@ -54,7 +54,7 @@ const ProjectsSection = () => {
         "MathJax",
         "Bootstrap/Tailwind"
       ],
-      github: "#",
+      github: "https://github.com/Niraj-Patel-1901/MAthminds.git",
       demo: "#",
       features: [
         "Full syllabus coverage (M1–M4) with topic-wise modules",
@@ -151,12 +151,12 @@ const ProjectsSection = () => {
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full" />
         </div>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
           {projects.map((project, index) => {
             const IconComponent = project.icon;
             const isFlipped = flippedCards.includes(index);
-            
+
             return (
               <div
                 key={index}
@@ -227,12 +227,8 @@ const ProjectsSection = () => {
                             </Badge>
                           ))}
                         </div>
-                        
-                        {project.status && project.status.includes('Ongoing') ? (
-                          <Button size="sm" variant="outline" className="w-full" disabled>
-                            🚧 Ongoing
-                          </Button>
-                        ) : (
+
+                        {project.github && project.github !== '#' ? (
                           <Button
                             size="sm"
                             variant="outline"
@@ -240,10 +236,14 @@ const ProjectsSection = () => {
                             onClick={() => window.open(project.github, '_blank')}
                           >
                             <Github className="h-4 w-4 mr-1" />
-                            View Code
+                            View Code {project.status?.includes('Ongoing') ? '(Ongoing)' : ''}
+                          </Button>
+                        ) : (
+                          <Button size="sm" variant="outline" className="w-full" disabled>
+                            🚧 Ongoing / Code Private
                           </Button>
                         )}
-                        
+
                         <Button
                           size="sm"
                           variant="ghost"

@@ -43,7 +43,7 @@ const HeroSection = () => {
               Kartik <span className="bg-gradient-to-r from-primary-glow to-secondary-glow bg-clip-text text-transparent">Parmar</span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-200 mb-6">
-              Aspiring Software Engineer | AI & ML Enthusiast
+              Software Engineer | AI & ML Enthusiast
             </p>
           </div>
 

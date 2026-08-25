@@ -25,11 +25,11 @@ const EducationSection = () => {
 
   const education = [
     {
-      degree: "Bachelor of Engineering - Computer Engineering (AI & ML)",
-      school: "A. P. Shah Institute of Technology",
+      degree: "B.E. Computer Engineering (AI & ML)",
+      school: "A. P. Shah Institute of Technology, University of Mumbai",
       location: "Thane, Maharashtra",
-      period: "2022  - 2026",
-      grade: "CGPA: 8.22/10",
+      period: "2022 – 2026",
+      grade: "CGPA: 8.22",
       icon: GraduationCap,
       highlights: [
         "🤖 Specialized in Artificial Intelligence & Machine Learning with focus on Data Science, Deep Learning, and NLP.",
